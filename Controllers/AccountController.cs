@@ -39,7 +39,7 @@ namespace AlexApplicationDemo.Controllers
 
         //
         // GET: /Account/Login
-        [HttpGet]
+        [HttpGet("api/Account")]
         [AllowAnonymous]
         public IActionResult Login(string returnUrl = null)
         {
@@ -49,7 +49,7 @@ namespace AlexApplicationDemo.Controllers
 
         //
         // POST: /Account/Login
-        [HttpPost]
+        [HttpPost("api/Account")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
