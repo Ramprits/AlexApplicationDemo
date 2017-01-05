@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using AlexApplicationDemo.Models;
+using AlexApplicationDemo.Models.EmployeeViewModels;
 
 namespace AlexApplicationDemo.Data
 {
@@ -14,6 +15,8 @@ namespace AlexApplicationDemo.Data
             : base(options)
         {
         }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
