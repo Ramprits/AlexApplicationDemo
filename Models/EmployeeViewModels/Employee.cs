@@ -6,6 +6,7 @@ namespace AlexApplicationDemo.Models.EmployeeViewModels
 {
      public class Employee
      {
+          
           [Key]
           [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
           public int EmployeeId { get; set; }
