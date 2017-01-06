@@ -8,7 +8,6 @@
     ViewData["Title"] = "Log in";
 }
 
-<h2>@ViewData["Title"].</h2>
 <div class="row">
     <div class="col-md-8">
         <section>
@@ -19,7 +18,7 @@
                 <div class="form-group row">
                     <label asp-for="Email" class="col-md-2 control-label"></label>
                     <div class="col-md-10">
-                        <input asp-for="Email" class="form-control" />
+                        <input asp-for="Email" class="form-control" autofocus="autofocus" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                 </div>
